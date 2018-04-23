@@ -16,7 +16,7 @@ This means that Linux or Mac would be preferable.
 
 ### git
 Ubuntu
-```
+```bash
 $ sudo apt install git
  ```
  
@@ -28,7 +28,7 @@ Windows, Download and install [here](https://git-scm.com/download/mac)
 General documentation on how to install [here](https://golang.org/doc/install)
 
 Ubuntu
-```
+```bash
 $ sudo apt install golang
  ```
  
@@ -55,11 +55,11 @@ if you want reviews and contribute with your solutions.
 ## Cloning and starting work
 Now we have everything needed to start working. 
 
-1. Find your go path, a dir named go usually located in your home directory. 
-1. Navigate and make the following folder structure $GOPATH/src/github.com/<YOUR GITHUB NAME>
+1. Find your go path, a dir named `go` usually located in your home directory. 
+1. Navigate and make the following folder structure `$GOPATH/src/github.com/<YOUR GITHUB NAME>`
 1. Now run `git clone https://github.com/<YOUR GITHUBHANDLE>/hello-world.git`, this will fetch this 
    project for you to work on 
-1. Open Visual Studio Code and select the folder $GOPATH/src/github.com/<YOUR GITHUB NAME>/hello-world
+1. Open Visual Studio Code and select the folder `$GOPATH/src/github.com/<YOUR GITHUB NAME>/hello-world`
    to work from 
    
    
@@ -67,8 +67,8 @@ Now we have everything needed to start working.
 
 I now assume you have visual studio code open aswell as the project within it. 
 
-1. Let us not begin by creating a folder students/<YOUR GITHUB NAME>
-1. Now create an empty file called `main.go`
+1. Let us not begin by creating a folder `students/<YOUR GITHUB NAME>`
+1. Now create an empty file within the folder called `main.go`
 1. In that file, let us past the following code 
 ```go
    package main
@@ -84,9 +84,15 @@ This is your first program written in go. Lets run it.
 
 Navigate to the file in a terminal of command prompt and run the following 
 
-```
+```bash
 $ go run main.go
 ```
  
- 
+`Hello world!` should now ampere on your screen 
 
+You can now "save" this to github by running
+```bash
+$ git add -A
+$ git commit -m "My first commit on my first go project"
+$ git push
+```
